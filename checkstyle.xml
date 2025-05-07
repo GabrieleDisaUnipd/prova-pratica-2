@@ -1,5 +1,4 @@
 <?xml version="1.0"?>
-<!DOCTYPE module PUBLIC "-//CHECKSTYLE//DTD CHECKSTYLE 1.4//EN" "http://checkstyle.sourceforge.net/dtds/configuration_1_4.dtd">
 
 <module name="Checker">
     <module name="TreeWalker">
