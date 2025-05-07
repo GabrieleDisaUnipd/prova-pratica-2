@@ -15,7 +15,8 @@ public class RomanPrinterTest {
     public void testPrintAsciiArt() {
         // Arrange
         int number = 1;
-        String expected = 
+        int number_4 = 4;
+        String expected_I = 
             " _____  \n" +
             "|_   _| \n" +
             "  | |   \n" +
@@ -23,11 +24,22 @@ public class RomanPrinterTest {
             " _| |_  \n" +
             "|_____| \n";
 
+        String expected_IV =
+        " _____  __      __ \n" +
+        "|_   _| \\ \\    / / \n" +
+        "  | |    \\ \\  / /  \n" +
+        "  | |     \\ \\/ /   \n" +
+        " _| |_     \\  /    \n" +
+        "|_____|     \\/     \n";
+    
+
         // Act
         String actual = RomanPrinter.print(number);
+        String actual_4 = RomanPrinter.print(number_4);
 
         // Assert
-        assertEquals(expected, actual);
+        assertEquals(expected_I, actual);
+        assertEquals(expected_IV, actual_4);
     }
 
 }
