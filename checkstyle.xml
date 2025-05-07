@@ -14,7 +14,9 @@
         <module name="NeedBraces"/>
     </module>
     <module name="FileLength"/>
-    <module name="LineLength"/>
+    <module name="LineLength">
+        <property name="max" value="200"/>
+    </module>
     <module name="FileTabCharacter"/>
     <module name="Header">
         <property name="header" value="////////////////////////////////////////////////////////////////////\n// [Gabriele] [Disa] [2075545]\n// [Tommaso] [Tombacco] [2076447]\n////////////////////////////////////////////////////////////////////"/>
