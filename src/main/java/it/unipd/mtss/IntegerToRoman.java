@@ -1,8 +1,23 @@
+////////////////////////////////////////////////////////////////////
+// [Gabriele] [Disa] [2075545]
+// [Tommaso] [Tombacco] [2076447]
+////////////////////////////////////////////////////////////////////
+
 package it.unipd.mtss;
 
 public class IntegerToRoman {
     public static String convert(int number) {
-        // TODO
-        return null;
+        int[] values = {1};
+        String[] symbols = {"I"};
+        StringBuilder sb = new StringBuilder();
+
+        for (int i = 0; i < values.length; i++) {
+            while (number >= values[i]) {
+                number -= values[i];
+                sb.append(symbols[i]);
+            }
+        }
+        
+        return sb.toString();
     }
 }
