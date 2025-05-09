@@ -19,7 +19,7 @@ public class IntegerToRomanTest {
     @Test
     public void testConvert() {
         //Arrange 
-        int numbers[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        int numbers[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 14};
 
         //Act
         List<String> romanNumbers = new ArrayList<>();
@@ -28,7 +28,7 @@ public class IntegerToRomanTest {
         }
 
         //Assert
-        String expected[] = {"I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X"};
+        String expected[] = {"I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X", "XIV"};
         assertArrayEquals(expected, romanNumbers.toArray(new String[0]));
     }
 
