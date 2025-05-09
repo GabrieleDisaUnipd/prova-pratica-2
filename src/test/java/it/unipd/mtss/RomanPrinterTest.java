@@ -17,16 +17,19 @@ public class RomanPrinterTest {
         int number = 1;
         int number_4 = 4;
         int number_10 = 10;
+        int number_14 = 14;
 
         // Act
         String actual = RomanPrinter.print(number);
         String actual_4 = RomanPrinter.print(number_4);
         String actual_10 = RomanPrinter.print(number_10);
+        String actual_14 = RomanPrinter.print(number_14);
 
         // Assert
         assertEquals(RomanPrinterTest.expected_I, actual);
         assertEquals(RomanPrinterTest.expected_IV, actual_4);
         assertEquals(RomanPrinterTest.expected_X, actual_10);
+        assertEquals(RomanPrinterTest.expected_XIV, actual_14);
     }
 
     static String expected_I = 
@@ -53,4 +56,11 @@ public class RomanPrinterTest {
     " / . \\  \n" +
     "/_/ \\_\\ \n" ;
 
+    static String expected_XIV = 
+    "__   __  _____  __      __ \n" + //
+    "\\ \\ / / |_   _| \\ \\    / / \n" + //
+    " \\ V /    | |    \\ \\  / /  \n" + //
+    "  > <     | |     \\ \\/ /   \n" + //
+    " / . \\   _| |_     \\  /    \n" + //
+    "/_/ \\_\\ |_____|     \\/     \n";
 }
