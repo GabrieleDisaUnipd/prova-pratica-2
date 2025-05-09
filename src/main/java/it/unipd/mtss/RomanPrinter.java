@@ -35,7 +35,8 @@ public class RomanPrinter {
     public enum RomanLetter {
         I(RomanLetters.I),
         V(RomanLetters.V),
-        X(RomanLetters.X);
+        X(RomanLetters.X),
+        L(RomanLetters.L);
 
         private final Character[][] matrix;
 
@@ -75,6 +76,15 @@ public class RomanPrinter {
             {' ',' ','>',' ','<',' ',' '},
             {' ','/',' ','.',' ','\\',' '},
             {'/','_','/',' ','\\','_','\\'}
+        };
+
+        public static final Character[][] L = {
+            {' ','_',' ',' ',' ',' ',' ',' '},
+            {'|',' ','|',' ',' ',' ',' ',' '},
+            {'|',' ','|',' ',' ',' ',' ',' '},
+            {'|',' ','|',' ',' ',' ',' ',' '},
+            {'|',' ','|','_','_','_','_',' '},
+            {'|','_','_','_','_','_','_','|'},
         };
     }
 }
