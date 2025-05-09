@@ -16,30 +16,41 @@ public class RomanPrinterTest {
         // Arrange
         int number = 1;
         int number_4 = 4;
-        String expected_I = 
-            " _____  \n" +
-            "|_   _| \n" +
-            "  | |   \n" +
-            "  | |   \n" +
-            " _| |_  \n" +
-            "|_____| \n";
-
-        String expected_IV =
-        " _____  __      __ \n" +
-        "|_   _| \\ \\    / / \n" +
-        "  | |    \\ \\  / /  \n" +
-        "  | |     \\ \\/ /   \n" +
-        " _| |_     \\  /    \n" +
-        "|_____|     \\/     \n";
-    
+        int number_10 = 10;
 
         // Act
         String actual = RomanPrinter.print(number);
         String actual_4 = RomanPrinter.print(number_4);
+        String actual_10 = RomanPrinter.print(number_10);
 
         // Assert
-        assertEquals(expected_I, actual);
-        assertEquals(expected_IV, actual_4);
+        assertEquals(RomanPrinterTest.expected_I, actual);
+        assertEquals(RomanPrinterTest.expected_IV, actual_4);
+        assertEquals(RomanPrinterTest.expected_X, actual_10);
     }
+
+    static String expected_I = 
+    " _____  \n" +
+    "|_   _| \n" +
+    "  | |   \n" +
+    "  | |   \n" +
+    " _| |_  \n" +
+    "|_____| \n";
+
+    static String expected_IV =
+    " _____  __      __ \n" +
+    "|_   _| \\ \\    / / \n" +
+    "  | |    \\ \\  / /  \n" +
+    "  | |     \\ \\/ /   \n" +
+    " _| |_     \\  /    \n" +
+    "|_____|     \\/     \n";
+
+    static String expected_X =
+    "__   __ \n" +
+    "\\ \\ / / \n" +
+    " \\ V /  \n" +
+    "  > <   \n" +
+    " / . \\  \n" +
+    "/_/ \\_\\ \n" ;
 
 }
