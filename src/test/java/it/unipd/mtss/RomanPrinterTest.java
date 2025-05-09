@@ -20,6 +20,7 @@ public class RomanPrinterTest {
         int number_14 = 14;
         int number_41 = 41;
         int number_94 = 94;
+        int number_455 = 455;
 
         // Act
         String actual = RomanPrinter.print(number);
@@ -28,6 +29,7 @@ public class RomanPrinterTest {
         String actual_14 = RomanPrinter.print(number_14);
         String actual_41 = RomanPrinter.print(number_41);
         String actual_94 = RomanPrinter.print(number_94);
+        String actual_455 = RomanPrinter.print(number_455);
 
         // Assert
         assertEquals(RomanPrinterTest.expected_I, actual);
@@ -36,6 +38,7 @@ public class RomanPrinterTest {
         assertEquals(RomanPrinterTest.expected_XIV, actual_14);
         assertEquals(RomanPrinterTest.expected_XLI, actual_41);
         assertEquals(RomanPrinterTest.expected_XCIV, actual_94);
+        assertEquals(RomanPrinterTest.expected_CDLV, actual_455);
     }
 
     static String expected_I = 
@@ -85,4 +88,12 @@ public class RomanPrinterTest {
     "  > <   | |       | |     \\ \\/ /   \n"+
     " / . \\  | |___   _| |_     \\  /    \n"+
     "/_/ \\_\\  \\____| |_____|     \\/     \n";
+
+    static String expected_CDLV =
+    "  ____   _____    _       __      __ \n" +
+    " / ___| |  __ \\  | |      \\ \\    / / \n" +
+    "| |     | |  | | | |       \\ \\  / /  \n" +
+    "| |     | |  | | | |        \\ \\/ /   \n" +
+    "| |___  | |__| | | |____     \\  /    \n" +
+    " \\____| |_____/  |______|     \\/     \n";
 }
